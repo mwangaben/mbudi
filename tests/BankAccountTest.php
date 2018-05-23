@@ -28,4 +28,11 @@ class BankAccountTest extends TestCase
     {
         $this->assertEquals(20, $this->account->deposit(20));
     }
+
+    /** @test **/
+    public function it_can_with_draw_cash()
+    {
+        $this->assertEquals(20, $this->account->deposit(20));
+        $this->assertEquals(15, $this->account->withdraw(5));
+    }
 }

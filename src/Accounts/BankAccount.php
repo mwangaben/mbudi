@@ -17,4 +17,11 @@ class BankAccount
 
         return $this->balance;
     }
+
+    public function withdraw($cash)
+    {
+        $this->balance = $this->balance - $cash;
+
+        return $this->balance;
+    }
 }
