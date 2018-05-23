@@ -10,4 +10,11 @@ class BankAccount
     {
         return $this->balance;
     }
+
+    public function deposit($cash)
+    {
+        $this->balance = $this->balance + $cash;
+
+        return $this->balance;
+    }
 }

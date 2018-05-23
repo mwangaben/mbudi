@@ -22,4 +22,10 @@ class BankAccountTest extends TestCase
     {
         $this->assertEquals(0, $this->account->getBalance());
     }
+
+    /** @test **/
+    public function it_can_deposit_cash()
+    {
+        $this->assertEquals(20, $this->account->deposit(20));
+    }
 }
